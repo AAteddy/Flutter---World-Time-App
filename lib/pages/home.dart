@@ -20,8 +20,7 @@ class _HomeState extends State<Home> {
     Map data = ModalRoute.of(context)!.settings.arguments as Map;
 
     // set background image
-    final String bgImage =
-        (data?['isDaytime'] ?? false) ? 'day.png' : 'night.png';
+
     final Color? bgColor =
         (data?['isDaytime'] ?? false) ? Colors.blue : Colors.indigo[700];
 
